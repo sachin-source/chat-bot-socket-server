@@ -64,8 +64,8 @@ redisClient.on('error', (err) => console.log('Redis client Error', err));
 /**
  * 
  * The plan :
- *  First the widget makes a get request with private key and channelid with userid
- *  An encrypted token will be sent to front end and will be stored at the localstorage
+ *  First the widget makes a get request with private key and channelid
+ *  An encrypted token with userid will be sent to front end and will be stored at the localstorage
  *  every event in the front end will be passed along with this userToken.
  *  removal of this user token is marked as logout and un authenticated.
  * 
